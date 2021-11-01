@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 
 
 def index(request):
@@ -12,7 +12,7 @@ def about(request):
 
 
 def contact(request):
-    return HttpResponse('<h3>Контакты</h3>')
+    return HttpResponseRedirect('/about')
 
 
 def products(request, productid):
