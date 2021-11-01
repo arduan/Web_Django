@@ -15,6 +15,7 @@ def contact(request):
     return HttpResponse('<h3>Контакты</h3>')
 
 
-def products(request, productid='Виталий'):
-    output = '<h2>Продукт № {0}</h2>'.format(productid)
+def products(request, productid):
+    category = request.GET.get('cat', '')
+    output = '<h2>Продукт № {0} Категория: {1}</h2>'.format(productid, category)
     return HttpResponse(output)
