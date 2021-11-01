@@ -4,7 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 
 def index(request):
-    return HttpResponse('<h3>Главная<h3>')
+    return render(request, 'index.html')
 
 
 def about(request):
