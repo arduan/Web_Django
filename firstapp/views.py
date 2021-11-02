@@ -12,7 +12,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 #      return render(request, 'index.html', context=data)
 
 def index(request):
-    return render(request, 'firstapp/home.html')
+    return render(request, 'firstapp/index.html')
 
 
 def about(request):
