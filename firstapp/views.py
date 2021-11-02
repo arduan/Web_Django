@@ -3,13 +3,17 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 
 
+# def index(request):
+#      header = 'Персональные данные'
+#      langs = ['Английский', 'Немецкий', 'Испанский']
+#      user = {'name': 'Виталий', 'age': 62}
+#      address = ('Ленина', 117, 119)
+#      data = {'header': header, 'user': user, 'langs': langs, 'address': address}
+#      return render(request, 'index.html', context=data)
+
 def index(request):
-     header = 'Персональные данные'
-     langs = ['Английский', 'Немецкий', 'Испанский']
-     user = {'name': 'Виталий', 'age': 62}
-     address = ('Ленина', 117, 119)
-     data = {'header': header, 'user': user, 'langs': langs, 'address': address}
-     return render(request, 'index.html', context=data)
+    return render(request, 'firstapp/home.html')
+
 
 def about(request):
     return HttpResponse('<h3>О сайте</h3>')
