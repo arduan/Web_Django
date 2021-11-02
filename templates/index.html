@@ -9,13 +9,6 @@
 <p>Имя: {{ user.name }} <br> Возраст: {{ user.age }}</p>
 <p>Адрес:  ул. {{ address.0 }}, {{ address.1 }}, {{ address.2 }}</p>
 <p>Владеет языками: {{ langs.0 }}, {{ langs.1 }}, {{ langs.2}}</p>
-{% block content %}
-<p>Анализ возраста клиента</p>
-{% if age > 65 %}
-    <p>Клиент пенсионного возраста</p>
-{% else %}
-    <p>Клиент не достиг пенсионного возраста</p>
-{% endif %}
-{% endblock content%}
+
 </body>
 </html>
