@@ -1,4 +1,6 @@
 {% extends 'firstapp/base.html' %}
 {% block title %}Индекс{% endblock title%}
 {% block header %}Главная страница{% endblock header%}
-{% block content %}Связка шаблонов index.html и base.html{% endblock content%}
+{% block content %}Связка шаблонов index.html и base.html
+    <p>Дата:  {% now 'j/m/Y' %}</p>
+{% endblock content%}
