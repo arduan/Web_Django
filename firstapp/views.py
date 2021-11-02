@@ -12,7 +12,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 #      return render(request, 'index.html', context=data)
 
 def index(request):
-    return render(request, 'firstapp/index.html')
+    data = {'age': 68}
+    return render(request, 'firstapp/index.html', context=data)
 
 
 def about(request):
