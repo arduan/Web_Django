@@ -12,8 +12,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 #      return render(request, 'index.html', context=data)
 
 def index(request):
-    data = {'age': 68}
-    return render(request, 'firstapp/index.html', context=data)
+    data = ['Ноутбуки', 'Принтеры', 'Сканеры', 'Диски', 'Шнуры']
+    return render(request, 'firstapp/index.html', context={'data': data})
 
 
 def about(request):
