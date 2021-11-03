@@ -1,6 +1,6 @@
 from django.shortcuts import render
-
 from django.http import HttpResponse, HttpResponseRedirect
+from .forms import UserForm
 
 
 # def index(request):
@@ -12,8 +12,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 #      return render(request, 'index.html', context=data)
 
 def index(request):
-    data = ['Ноутбуки', 'Принтеры', 'Сканеры', 'Диски', 'Шнуры']
-    return render(request, 'firstapp/index.html', context={'data': data})
+    userform = UserForm()
+    return render(request, 'firstapp/index1.html', {'form': userform})
 
 
 def about(request):
