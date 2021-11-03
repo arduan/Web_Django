@@ -5,7 +5,8 @@
     <title>Форма Django</title>
 </head>
 <body>
-    <form method="post">{% csrf_token %}>
+    <form method="POST">
+        {% csrf_token %}
     <table>
         {{ form }}
     </table>
