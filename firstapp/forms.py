@@ -3,6 +3,7 @@ from django import forms
 class UserForm(forms.Form):
     name = forms.CharField(label='Имя клиента')
     age = forms.IntegerField(label='Возраст клиента')
+    comentitle = forms.CharField(label='Коментарии', widget=forms.Textarea)
     basket =forms.BooleanField(label='Положить товар в корзину', required=False)
     vyb = forms.NullBooleanField(label='Вы поедите в Сочи этим летом.')
     email = forms.EmailField(label='Электронный адрес', help_text='Обязательный символ @')
@@ -10,3 +11,4 @@ class UserForm(forms.Form):
     file_path = forms.FilePathField(label='Выберите файл', path='C:', allow_files='True', allow_folders='True')
     file = forms.FileField(label='Файл')
     img_file = forms.ImageField(label='Изображение')
+    time = forms.DateField(label='Введите время')
