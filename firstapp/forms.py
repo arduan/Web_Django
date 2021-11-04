@@ -9,3 +9,4 @@ class UserForm(forms.Form):
     ip_address = forms.GenericIPAddressField(label='IP адрес', help_text='Примерный формат 192.0.2.0')
     file_path = forms.FilePathField(label='Выберите файл', path='C:', allow_files='True', allow_folders='True')
     file = forms.FileField(label='Файл')
+    img_file = forms.ImageField(label='Изображение')
