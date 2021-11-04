@@ -12,6 +12,8 @@ from django.http import *
 #      data = {'header': header, 'user': user, 'langs': langs, 'address': address}
 #      return render(request, 'index.html', context=data)
 
+
+
 def index(request):
     userform = UserForm()
     return render(request, 'firstapp/index1.html', {'form': userform})

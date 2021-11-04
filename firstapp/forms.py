@@ -12,3 +12,4 @@ class UserForm(forms.Form):
     file = forms.FileField(label='Файл')
     img_file = forms.ImageField(label='Изображение')
     time = forms.DateField(label='Введите время')
+
